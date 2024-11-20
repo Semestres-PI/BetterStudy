@@ -5,14 +5,21 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <section>
-      <h2>Faça login para continuar...</h2>
-      <form>
-        <input type="text" placeholder="Usuário" >
-        <input type="text" placeholder="Senha" >
-        <button class="primario" type="button">Confirmar</button>
-      </form>
-      
+      <header>
+         <div class="better">
+            <span>BetterStudy</span>
+         </div>
+      </header>
+    <div class="contem">
+      <section class="conteudo">
+        <form>
+          <h2>Faça login para continuar</h2>
+          <input type="text" placeholder="Usuário" >
+          <input type="text" placeholder="Senha" >
+          <button class="primario" type="button">Confirmar</button>
+        </form>
+     </section>  
+    </div>
   `,
   styleUrl: './login.component.scss'
 })
