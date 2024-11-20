@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   template: `
       <header>
          <div class="better">
+            <img class="logo-marca" src="../public/betterstudy-logo.ico" alt="logo">
             <span>BetterStudy</span>
          </div>
       </header>
