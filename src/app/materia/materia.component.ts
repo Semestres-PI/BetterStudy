@@ -8,8 +8,13 @@ import { Materia } from '../materia'
   imports: [CommonModule],
   template: `
     <section class="materia">
-      <h2 class="materia-nome">{{mat.nome}}</h2>
-      <p class="materia-nota">{{mat.nota}}</p>
+      
+        <div class="grid-item">
+          <h4 class="materia-nome">{{mat.nome}}</h4>
+          <p class="materia-nota">Nota: {{mat.nota}}</p>
+          <p>Classificação ABC: {{mat.abc}}</p>
+        </div>
+      
     </section>
   `,
   styleUrl: './materia.component.scss'

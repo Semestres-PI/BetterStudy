@@ -12,11 +12,15 @@ import { CommonModule } from '@angular/common';
   // templateUrl: './dashboard.component.html',
   template: `
   <app-dashboard *ngFor="let nom of nomeList" [nom]="nom" ></app-dashboard>
-  <div>
-  <app-materia *ngFor="let teste of materiaList" [mat]="teste"></app-materia>
+  <div class="container">
+      <div class="dashboard">
+        <div class="grades">
+          <app-materia *ngFor="let teste of materiaList" [mat]="teste"></app-materia>
+        </div>  
+    </div>
   </div>
   
-  <h2>this</h2>`,
+  `,
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
