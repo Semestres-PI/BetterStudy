@@ -10,7 +10,7 @@ import { Materia } from '../materia';
   standalone: true,
   imports: [],
   template: `
-    <section>
+    <!-- <section>
       <h2>Faça login para continuar...</h2>
       <form class="login" >
         <input class="login-usuario" type="text" placeholder="Usuário" > <br>
@@ -18,6 +18,18 @@ import { Materia } from '../materia';
         <button class="login-botao" type="button" (click)="enviarLogin()">Confirmar</button>
         <p class="aguarde" >Aguarde...</p>
       </form>
+    </section> -->
+    <div class="contem"><section class="conteudo">
+        <form class="login">
+          <h2>Faça login para continuar</h2>
+          <input class="login-usuario" type="text" placeholder="Usuário" >
+          <input class="login-senha" type="password" placeholder="Senha" >
+          <button class="login-botao" type="button" (click)="enviarLogin()" >Confirmar</button>
+          <p class="aguarde" >Aguarde...</p>
+        </form>
+      </section>
+    </div>
+      
       
   `,
   styleUrl: './login.component.scss'

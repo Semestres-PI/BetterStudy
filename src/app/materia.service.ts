@@ -37,7 +37,7 @@ export class MateriaService {
   //   'nota': "3.5",
   //   'abc': 'B'
   // },
-  ];
+  ]; 
   protected nomeList: Nome[] = [];
 
   constructor() { }
